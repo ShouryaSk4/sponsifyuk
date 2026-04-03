@@ -1114,7 +1114,7 @@ def health_check():
 if __name__ == "__main__":
     print("\n" + "=" * 60)
     print("  SponsifyUK API Server")
-    print("  http://localhost:5000")
+    print("  http://localhost:8000")
     print("=" * 60 + "\n")
-    app.run(debug=True, host="0.0.0.0", port=5000)
+    app.run(debug=True, host="0.0.0.0", port=8000)
     
