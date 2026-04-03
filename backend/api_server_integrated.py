@@ -27,8 +27,12 @@ import hashlib
 import secrets
 from datetime import datetime
 import stripe
+import os
+from dotenv import load_dotenv
 
-stripe.api_key = "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" ## please replace with env vairbale once you deploy
+load_dotenv()
+
+stripe.api_key = os.getenv("SECRET_KEY")
 
 # ── App Setup ────────────────────────────────────────────────────────────────
 
