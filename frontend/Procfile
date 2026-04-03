@@ -1,1 +1,1 @@
-web: npm install && npm run build && npx serve -s dist -l 3000 --single
+web: npx serve -s dist -l 3000 --single
