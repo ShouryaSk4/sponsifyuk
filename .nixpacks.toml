@@ -1,5 +1,8 @@
 [phases.install]
-cmds = ["npm install"]
+cmds = ["cd frontend && npm install"]
 
 [phases.build]
-cmds = ["npm run build"]
+cmds = ["cd frontend && npm run build"]
+
+[start]
+cmd = "cd frontend && npx serve -s dist -l 3000 --single"
