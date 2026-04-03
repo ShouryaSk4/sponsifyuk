@@ -1,0 +1,786 @@
+/*================================================
+Default CSS
+=================================================*/
+.switch-box {
+  position: fixed;
+  z-index: 1;
+  left: 3%;
+  bottom: 63px;
+  z-index: 999;
+}
+.switch-box .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.switch-box .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.switch-box .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #cbc1c1;
+  transition: 0.4s;
+}
+.switch-box .slider:before {
+  position: absolute;
+  content: "\f119";
+  font-family: flaticon !important;
+  color: #000000;
+  font-size: 21px;
+  text-align: center;
+  top: 2px;
+  left: 8px;
+  height: 30px;
+  width: 30px;
+  left: 2.5px;
+  bottom: 1px;
+  top: 0;
+  margin: auto 0;
+  background-color: #ffffff;
+  transition: 0.4s;
+}
+.switch-box input:checked + .slider {
+  background-color: #cbc1c1;
+}
+.switch-box input:focus + .slider {
+  background-color: #cbc1c1;
+}
+.switch-box input:checked + .slider:before {
+  content: "\f109";
+  transform: translateX(24px);
+}
+.switch-box .slider.round {
+  border-radius: 50px;
+}
+.switch-box .slider.round:before {
+  border-radius: 50%;
+}
+
+.theme-dark {
+  /*
+  DaseBoard Style
+  ======================================================*/
+  /*Sidemenu CSS*/
+}
+.theme-dark body {
+  background-color: #000000;
+  color: #f1f1f1;
+}
+.theme-dark p {
+  color: #f1f1f1;
+}
+.theme-dark p a {
+  color: #f1f1f1 !important;
+}
+.theme-dark .h1, .theme-dark .h2, .theme-dark .h3, .theme-dark .h4, .theme-dark .h5, .theme-dark .h6, .theme-dark h1, .theme-dark h2, .theme-dark h3, .theme-dark h4, .theme-dark h5, .theme-dark h6 {
+  color: #ffffff !important;
+}
+.theme-dark .h1 a, .theme-dark .h2 a, .theme-dark .h3 a, .theme-dark .h4 a, .theme-dark .h5 a, .theme-dark .h6 a, .theme-dark h1 a, .theme-dark h2 a, .theme-dark h3 a, .theme-dark h4 a, .theme-dark h5 a, .theme-dark h6 a {
+  color: #ffffff !important;
+}
+.theme-dark .bg-f0f4fc {
+  background-color: #181818;
+}
+.theme-dark .bg-f0f5f7 {
+  background-color: #181818;
+}
+.theme-dark .form-control {
+  border: 1px solid #434343;
+  background-color: #080808;
+  color: #ffffff;
+}
+.theme-dark .form-control::-moz-placeholder {
+  color: #ffffff;
+}
+.theme-dark .form-control::placeholder {
+  color: #ffffff;
+}
+.theme-dark .form-control:focus::-moz-placeholder {
+  color: transparent;
+  border-color: #1967d2;
+}
+.theme-dark .form-control:focus::placeholder {
+  color: transparent;
+  border-color: #1967d2;
+}
+.theme-dark .navbar-area {
+  background-color: #0e0e0e;
+}
+.theme-dark .navbar-area.style2 {
+  background-color: transparent;
+}
+.theme-dark .navbar-area.style2.is-sticky {
+  background-color: #0e0e0e;
+}
+.theme-dark .desktop-nav .navbar-brand .main-logo {
+  display: none;
+}
+.theme-dark .desktop-nav .navbar-brand .white-logo {
+  display: block;
+}
+.theme-dark .desktop-nav .navbar .navbar-nav .nav-item a {
+  color: #ffffff;
+}
+.theme-dark .desktop-nav .navbar .navbar-nav .nav-item a:hover, .theme-dark .desktop-nav .navbar .navbar-nav .nav-item a:focus, .theme-dark .desktop-nav .navbar .navbar-nav .nav-item a.active {
+  color: #1967d2;
+}
+.theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li a {
+  color: #000000;
+}
+.theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:hover, .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:focus, .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li a.active {
+  color: #1967d2;
+}
+.theme-dark .desktop-nav .navbar .others-options .profile-nav-item .dropdown-bs-toggle span {
+  color: #ffffff;
+}
+.theme-dark .desktop-nav .navbar .others-options .profile-nav-item.dropdown .dropdown-menu {
+  background-color: #0e0e0e;
+}
+.theme-dark .desktop-nav .navbar .others-options .profile-nav-item.dropdown .dropdown-menu .dropdown-header {
+  border-color: #353434;
+}
+.theme-dark .desktop-nav .navbar .others-options .profile-nav-item.dropdown .dropdown-menu .dropdown-header .name {
+  color: #ffffff;
+}
+.theme-dark .desktop-nav .navbar .others-options .profile-nav-item.dropdown .dropdown-menu .dropdown-header .email {
+  color: #ffffff;
+}
+.theme-dark .desktop-nav .navbar .others-options .profile-nav-item.dropdown .dropdown-menu .dropdown-body ul .nav-item .nav-link .icon img {
+  filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(118deg) brightness(103%) contrast(102%);
+}
+.theme-dark .desktop-nav .navbar .others-options .profile-nav-item.dropdown .dropdown-menu .dropdown-body ul .nav-item .nav-link span {
+  color: #ffffff;
+}
+.theme-dark .desktop-nav .navbar .others-options .profile-nav-item.dropdown .dropdown-menu .dropdown-footer {
+  border-color: #353434;
+}
+.theme-dark .desktop-nav .navbar .others-options .profile-nav-item.dropdown .dropdown-menu .dropdown-footer ul .nav-link img {
+  filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(118deg) brightness(103%) contrast(102%);
+}
+.theme-dark .banner-area.style2 {
+  background-color: #0e0e0e;
+}
+.theme-dark .banner-area-style3 {
+  background-color: #0e0e0e;
+}
+.theme-dark .banner-area-style3::before {
+  background-color: #000000;
+}
+.theme-dark .banner-search-form {
+  background-color: #000000;
+}
+.theme-dark .banner-search-form .form-group .form-control {
+  background-color: #000000;
+}
+.theme-dark .banner-search-form .form-group::before {
+  background-color: #696666;
+}
+.theme-dark .banner-image-content .join-now {
+  background-color: #000000;
+}
+.theme-dark .banner-image-content .creative-agency {
+  background-color: #000000;
+}
+.theme-dark .banner-image-content .assisted-candidate {
+  background-color: #000000;
+}
+.theme-dark .banner-content .trending-keywords ul li span {
+  color: #ffffff;
+}
+.theme-dark .banner-content .trending-keywords ul li a {
+  color: #ffffff;
+}
+.theme-dark .banner-content .trending-keywords ul li a:hover {
+  color: #1967d2;
+}
+.theme-dark .banner-image-content-style2 .assisted-candidate {
+  background-color: #000000;
+}
+.theme-dark .banner-image-content-style2 .creative-agency {
+  background-color: #000000;
+}
+.theme-dark .page-banner-content ul li a {
+  color: #ffffff;
+}
+.theme-dark .single-category-card {
+  background-color: #0e0e0e;
+}
+.theme-dark .single-category-card .icon {
+  background-color: #000000;
+  border: 1px solid rgba(16, 16, 16, 0.1);
+}
+.theme-dark .single-category-card:hover .icon {
+  background-color: #ffffff;
+}
+.theme-dark .single-categories-box {
+  background-color: #0e0e0e;
+}
+.theme-dark .categories-area.style2::before {
+  background-color: #000000;
+}
+.theme-dark .shoting-btn ul li button {
+  color: #ffffff;
+}
+.theme-dark .shoting-btn ul li button:hover, .theme-dark .shoting-btn ul li button:focus, .theme-dark .shoting-btn ul li button.active {
+  background-color: #0e0e0e;
+  color: #ffffff;
+}
+.theme-dark .single-job-card .job-content .bottom-content ul li h3 {
+  color: #1967d2 !important;
+}
+.theme-dark .single-job-card .job-content .bottom-content ul li h3 span {
+  color: #ffffff;
+}
+.theme-dark .single-job-card.style-2 {
+  background-color: #000000;
+}
+.theme-dark .single-job-card.style-3 {
+  background-color: #0e0e0e;
+}
+.theme-dark .single-job-card.style-3 .job-content h3 {
+  color: #1967d2 !important;
+}
+.theme-dark .single-job-card.style-3 .job-content h3 span {
+  color: #ffffff;
+}
+.theme-dark .recent-job-box {
+  background-color: #0e0e0e;
+}
+.theme-dark .dream-job-image .assisted-candidate {
+  background-color: #000000;
+}
+.theme-dark .dream-job-image .creative-agency {
+  background-color: #000000;
+}
+.theme-dark .dream-job-image .join-now {
+  background-color: #000000;
+}
+.theme-dark .freelancer-details-content .works-experience ul li {
+  border-color: rgba(199, 196, 196, 0.08);
+}
+.theme-dark .search-job-top-content .shorting-content .form-control {
+  background-color: #0e0e0e;
+}
+.theme-dark .post-job-content {
+  background-color: #0e0e0e;
+}
+.theme-dark .post-job-content .some-info ul li .choose-file label {
+  background-color: #000000;
+}
+.theme-dark .faq-accordion .accordion .accordion-content {
+  background-color: #000000;
+}
+.theme-dark .faq-accordion .accordion .accordion-title {
+  background-color: #000000;
+  color: #ffffff;
+}
+.theme-dark .single-company-card {
+  background-color: #0e0e0e;
+}
+.theme-dark .single-pricing-card {
+  background-color: #131212;
+}
+.theme-dark .single-pricing-card .pricing-top-content::before {
+  background-color: #565555;
+}
+.theme-dark .single-works-card {
+  background-color: #0e0e0e;
+}
+.theme-dark .single-employer-card {
+  background-color: #000000;
+}
+.theme-dark .employers-details-top-content {
+  background-color: #0e0e0e;
+}
+.theme-dark .employers-details-top-content .details-left-content .info ul li a {
+  color: #ffffff;
+}
+.theme-dark .employers-details-content .review .single-review {
+  border: 1px solid rgba(248, 248, 251, 0.08);
+}
+.theme-dark .add-review {
+  background-color: #0e0e0e;
+}
+.theme-dark .single-sidebar-widget {
+  background-color: #0e0e0e;
+}
+.theme-dark .single-sidebar-widget.job-overview ul li span {
+  color: #ffffff;
+}
+.theme-dark .single-sidebar-widget.owner-info ul li a {
+  color: #ffffff;
+}
+.theme-dark .single-sidebar-widget.owner-info ul li a:hover {
+  color: #1967d2;
+}
+.theme-dark .single-sidebar-widget.owner-info ul li span {
+  color: #ffffff;
+}
+.theme-dark .single-sidebar-widget.company-overview ul li span {
+  color: #ffffff;
+}
+.theme-dark .single-sidebar-widget.company-overview ul li a {
+  color: #ffffff;
+}
+.theme-dark .single-sidebar-widget.company-overview ul li a:hover {
+  color: #1967d2;
+}
+.theme-dark .single-sidebar-widget.range ul li a {
+  color: #ffffff;
+}
+.theme-dark .single-sidebar-widget.range ul li a:hover {
+  color: #1967d2;
+}
+.theme-dark .single-sidebar-widget.location.style2 ul li span {
+  color: #ffffff;
+}
+.theme-dark .single-sidebar-widget.location.style2 ul li a {
+  color: #ffffff;
+}
+.theme-dark .single-sidebar-widget.candidate-side-widget ul li a {
+  color: #ffffff;
+}
+.theme-dark .single-sidebar-widget.categories ul li a {
+  color: #ffffff;
+}
+.theme-dark .single-sidebar-widget.tags a {
+  background-color: #000000;
+  color: #ffffff;
+}
+.theme-dark .single-sidebar-widget.tags a:hover {
+  background-color: #1967d2;
+  color: #ffffff;
+}
+.theme-dark .single-reviews-card {
+  background-color: #060505;
+}
+.theme-dark .single-review-box {
+  background-color: #000000;
+}
+.theme-dark .counter-area::before {
+  background-color: #181818;
+}
+.theme-dark .single-counter-item.style-2 p {
+  color: #ffffff;
+}
+.theme-dark .cv-img-area .inbox {
+  background-color: #0e0e0e;
+}
+.theme-dark .job-listing-search-form {
+  background-color: #0e0e0e;
+}
+.theme-dark .job-listing-search-form .form-group .form-control {
+  background-color: #0e0e0e;
+  color: #ffffff;
+}
+.theme-dark .job-listing-search-form .form-group .form-control::-moz-placeholder {
+  color: #ffffff;
+}
+.theme-dark .job-listing-search-form .form-group .form-control::placeholder {
+  color: #ffffff;
+}
+.theme-dark .search-job-top-content .shoing-content {
+  color: #ffffff;
+}
+.theme-dark .parner-logo img {
+  filter: invert(1);
+}
+.theme-dark .cv-img-area-style2 .candidate-content {
+  background-color: #111111;
+}
+.theme-dark .cv-img-area-style2 .candidate-content p {
+  color: #ffffff;
+}
+.theme-dark .paginations ul li a {
+  color: #ffffff;
+  border-color: #6b6b6b;
+}
+.theme-dark .paginations.style2 ul li a {
+  background-color: #000000;
+}
+.theme-dark .paginations.style2 ul li a:hover, .theme-dark .paginations.style2 ul li a.active {
+  background-color: #1967d2;
+}
+.theme-dark .single-contact-info-box {
+  background-color: #0e0e0e;
+}
+.theme-dark .single-contact-info-box .info-content a {
+  color: #ffffff;
+}
+.theme-dark .single-contact-info-box .info-content a:hover {
+  color: #1967d2;
+}
+.theme-dark .contact-form {
+  background-color: #040303;
+}
+.theme-dark .single-team-card {
+  background-color: #0e0e0e;
+}
+.theme-dark .candidates-details-content .works-experience ul li {
+  border-bottom: 1px solid rgba(181, 182, 185, 0.08);
+}
+.theme-dark .candidates-details-left-content .info ul li a {
+  color: #ffffff;
+}
+.theme-dark .single-freelancer-card {
+  background-color: #0a0909;
+}
+.theme-dark .single-freelancer-box {
+  background-color: #0e0e0e;
+}
+.theme-dark .freelancer-details-content .freelancer-top-content .single-freelancer-card {
+  background-color: unset;
+}
+.theme-dark .single-blog-card .blog-content .info-list ul li a {
+  color: #ffffff;
+}
+.theme-dark .single-blog-card .blog-content h2 a:hover {
+  color: #1967d2 !important;
+}
+.theme-dark .single-blog-card .blog-content .read-more {
+  color: #1967d2;
+}
+.theme-dark .single-blog-card .blog-content .read-more:hover {
+  color: #1967d2;
+}
+.theme-dark .single-blog-card.style3 {
+  background-color: #0e0e0e;
+}
+.theme-dark .blog-details .blog-details-top-content .info ul li a {
+  color: #ffffff;
+}
+.theme-dark .blog-details .quote {
+  background-color: #0e0e0e;
+}
+.theme-dark .blog-details .quote p {
+  color: #ffffff;
+}
+.theme-dark .blog-details .tag-and-share {
+  background-color: #0e0e0e;
+}
+.theme-dark .blog-details .tag-and-share .tags ul li a {
+  color: #ffffff;
+}
+.theme-dark .blog-details .reply-content {
+  background-color: #0e0e0e;
+}
+.theme-dark .login {
+  background-color: #0e0e0e;
+}
+.theme-dark .register {
+  background-color: #0e0e0e;
+}
+.theme-dark .password {
+  background-color: #0e0e0e;
+}
+.theme-dark .privacy-content .list ul li {
+  color: #ffffff;
+}
+.theme-dark .condition-content .list ul li {
+  color: #ffffff;
+}
+.theme-dark .coming-soon-area::before {
+  background-color: #0e0e0e;
+}
+.theme-dark .coming-soon-counter {
+  border: 30px solid #0b0b0b;
+  background-color: #0e0e0e;
+}
+.theme-dark .coming-soon-counter::before {
+  border: 1px solid #525151;
+}
+.theme-dark .coming-soon-counter .list ul li {
+  color: #1967d2;
+}
+.theme-dark .coming-soon-counter .list ul li span {
+  color: #ffffff;
+}
+.theme-dark .coming-soon-counter .list ul li::before {
+  background-color: #ffffff;
+}
+.theme-dark .coming-soon-counter .list ul li::after {
+  background-color: #ffffff;
+}
+.theme-dark .coming-soon-content .top-content .coming-soon-logo .logo-2 {
+  display: block;
+  margin: auto;
+}
+.theme-dark .coming-soon-content .top-content .coming-soon-logo .logo-1 {
+  display: none;
+}
+.theme-dark .coming-soon-content .newsletter-form .form-control {
+  background-color: #0e0e0e;
+  color: #ffffff;
+}
+.theme-dark .coming-soon-content .newsletter-form .form-control::-moz-placeholder {
+  color: #ffffff;
+}
+.theme-dark .coming-soon-content .newsletter-form .form-control::placeholder {
+  color: #ffffff;
+}
+.theme-dark .coming-soon-content .social-links ul li a {
+  background-color: #0e0e0e;
+  border: 1px solid #4b4a4a;
+}
+.theme-dark .coming-soon-content .social-links ul li a:hover {
+  background-color: #1967d2;
+  color: #ffffff;
+}
+.theme-dark .main-dashboard-content {
+  background-color: #181818;
+}
+.theme-dark .breadcrumb-area .breadcrumb .item {
+  color: #ffffff;
+}
+.theme-dark .breadcrumb-area .breadcrumb .item a {
+  color: #ffffff;
+}
+.theme-dark .breadcrumb-area .breadcrumb .item i {
+  color: #ffffff;
+}
+.theme-dark .breadcrumb-area .breadcrumb .item:last-child {
+  color: #1967d2;
+}
+.theme-dark .recent-notifications-box {
+  background-color: #000000;
+}
+.theme-dark .recent-notifications-box h3 {
+  border-color: #1b1a1a;
+}
+.theme-dark .recent-notifications-box ul li {
+  border-color: #0e0e0e;
+  color: #ffffff;
+}
+.theme-dark .recent-notifications-box ul li span {
+  color: #929191;
+}
+.theme-dark .recent-notifications-box ul li .close span {
+  color: #ff0000;
+}
+.theme-dark .recent-notifications-box ul li:hover {
+  background-color: #1f1e1e;
+}
+.theme-dark .invoices-box {
+  background-color: #000000;
+}
+.theme-dark .invoices-box h3 {
+  border-color: #1b1a1a;
+}
+.theme-dark .invoices-box ul li {
+  border-color: #0e0e0e;
+}
+.theme-dark .invoices-box ul li span {
+  color: #ffffff;
+}
+.theme-dark .invoices-box ul li:hover {
+  background-color: #1f1e1e;
+}
+.theme-dark .invoices-box ul li ul li {
+  color: #ffffff;
+}
+.theme-dark .sidemenu-area {
+  background: #000000;
+}
+.theme-dark .sidemenu-area .sidemenu-header {
+  background: #000000;
+}
+.theme-dark .sidemenu-area .sidemenu-body {
+  background: #000000;
+}
+.theme-dark .sidemenu-area .sidemenu-body .sidemenu-nav .nav-item .nav-link {
+  color: #ffffff;
+}
+.theme-dark .sidemenu-area .sidemenu-body .sidemenu-nav .nav-item .nav-link .icon {
+  color: #ffffff;
+}
+.theme-dark .sidemenu-area .sidemenu-body .sidemenu-nav .nav-item .nav-link .icon img {
+  filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(118deg) brightness(103%) contrast(102%);
+}
+.theme-dark .sidemenu-area .sidemenu-body .sidemenu-nav .nav-item .nav-link:hover {
+  background-color: #181818;
+  color: #1967d2;
+}
+.theme-dark .sidemenu-area .sidemenu-body .sidemenu-nav .nav-item .nav-link:hover .icon {
+  transform: rotateY(-180deg);
+  color: #1967d2;
+}
+.theme-dark .sidemenu-area .sidemenu-body .sidemenu-nav .nav-item .nav-link:hover .icon img {
+  filter: invert(33%) sepia(47%) saturate(3411%) hue-rotate(204deg) brightness(85%) contrast(93%);
+}
+.theme-dark .sidemenu-area .sidemenu-body .sidemenu-nav .nav-item.active .nav-link {
+  background-color: #181818;
+  color: #1967d2;
+}
+.theme-dark .sidemenu-area .sidemenu-body .sidemenu-nav .nav-item.active .nav-link .icon {
+  color: #1967d2;
+}
+.theme-dark .sidemenu-area .sidemenu-body .sidemenu-nav .nav-item.active .nav-link .icon img {
+  filter: invert(33%) sepia(47%) saturate(3411%) hue-rotate(204deg) brightness(85%) contrast(93%);
+}
+.theme-dark .daseboard-post-job-content {
+  background-color: #000000;
+}
+.theme-dark .daseboard-post-job-content h3 {
+  border-bottom: 1px solid #525252;
+}
+.theme-dark .daseboard-post-job-content .post-job-form .form-group label {
+  color: #ffffff;
+}
+.theme-dark .daseboard-post-job-content .post-job-form .form-group .form-control {
+  background-color: #0e0e0e;
+}
+.theme-dark .listing {
+  background-color: #000000;
+}
+.theme-dark .manage-jobs-box {
+  background-color: #000000;
+}
+.theme-dark .manage-jobs-box .manage-jobs-table table tbody tr {
+  border-color: #0e0e0e;
+}
+.theme-dark .manage-jobs-box .manage-jobs-table table tbody tr td {
+  color: #ffffff;
+}
+.theme-dark .manage-applicants-area .applicants-found {
+  background-color: #080808;
+}
+.theme-dark .manage-applicants-area .applicants-found .left-content {
+  color: #ffffff;
+}
+.theme-dark .single-applicants-card {
+  background-color: #000000;
+}
+.theme-dark .applied-shorting-content .shorting-right-content .form-control {
+  background-color: #000000;
+}
+.theme-dark .applied-jobs-box .applied-jobs-table {
+  background-color: #000000;
+}
+.theme-dark .applied-jobs-box .applied-jobs-table table tbody tr {
+  border-color: #0e0e0e;
+}
+.theme-dark .applied-jobs-box .applied-jobs-table table tbody tr td {
+  color: #ffffff;
+}
+.theme-dark .manage-resum-area {
+  background-color: #000000;
+}
+.theme-dark .manage-resum-area .manage-resum-table table tbody tr {
+  border-color: #0e0e0e;
+}
+.theme-dark .manage-resum-area .manage-resum-table table tbody tr td {
+  color: #ffffff;
+}
+.theme-dark .create-resumes-box {
+  background-color: #000000;
+}
+.theme-dark .create-resumes-box h3 {
+  border-color: #222222;
+}
+.theme-dark .create-resumes-box .create-content .resume-form .form-group label {
+  color: #ffffff;
+}
+.theme-dark .create-resumes-box .create-content .resume-form .form-group .form-control {
+  background-color: #0e0e0e;
+}
+.theme-dark .details-form-content {
+  background-color: #000000;
+}
+.theme-dark .details-form-content h3 {
+  border-color: #222222;
+}
+.theme-dark .details-form-content .form-content .form-group label {
+  color: #ffffff;
+}
+.theme-dark .details-form-content .form-content .form-group .form-control {
+  background-color: #0e0e0e;
+}
+.theme-dark .alert-jobs-box .alert-jobs-table {
+  background-color: #000000;
+}
+.theme-dark .alert-jobs-box .alert-jobs-table table tbody tr {
+  border-color: #0e0e0e;
+}
+.theme-dark .alert-jobs-box .alert-jobs-table table tbody tr td {
+  color: #ffffff;
+}
+.theme-dark .package-box .manage-resum-table {
+  background-color: #000000;
+}
+.theme-dark .package-box .manage-resum-table table tbody tr {
+  border-color: #0e0e0e;
+}
+.theme-dark .package-box .manage-resum-table table tbody tr td {
+  color: #ffffff;
+}
+.theme-dark .massage-area {
+  background-color: #000000;
+}
+.theme-dark .massage-area .massage-top-content {
+  border-color: #212121;
+}
+.theme-dark .massage-left-sidebar ul li {
+  border-color: #212121;
+}
+.theme-dark .chat-box .chat-list li .chating-left-style .chat-body {
+  background-color: #0e0e0e;
+}
+.theme-dark .chat-box .chat-list li .chating-left-style .chat-body::before {
+  background-color: #0e0e0e;
+}
+.theme-dark .chat-box .chat-list li .chating-right-style .chat-body {
+  background-color: #0e0e0e;
+}
+.theme-dark .chat-box .chat-list li .chating-right-style .chat-body::before {
+  background-color: #0e0e0e;
+}
+.theme-dark .my-profile-area .profile-form-content {
+  background-color: #000000;
+}
+.theme-dark .my-profile-area .profile-form-content h3 {
+  border-color: #0e0e0e;
+}
+.theme-dark .my-profile-area .profile-form-content .profile-form .form-group label {
+  color: #ffffff;
+}
+.theme-dark .my-profile-area .profile-form-content .profile-form .form-group .form-control {
+  background-color: #0e0e0e;
+}
+.theme-dark .chainge-password-box {
+  background-color: #000000;
+}
+.theme-dark .chainge-password-box h3 {
+  border-color: #0e0e0e;
+}
+.theme-dark .chainge-password-box .password-form .form-group label {
+  color: #ffffff;
+}
+.theme-dark .chainge-password-box .password-form .form-group .form-control {
+  background-color: #0e0e0e;
+}
+@media only screen and (max-width: 991px) {
+  .theme-dark .navbar-area.style2 {
+    background-color: #1a1919;
+  }
+  .theme-dark .mobile-responsive-nav .mobile-responsive-menu .logo .white-logo {
+    display: block;
+  }
+  .theme-dark .mobile-responsive-nav .mobile-responsive-menu .logo .main-logo {
+    display: none;
+  }
+  .theme-dark .mobile-responsive-nav .mobile-responsive-menu.mean-container .mean-nav ul {
+    background-color: #090909;
+  }
+  .theme-dark .mobile-responsive-nav .mobile-responsive-menu.mean-container .mean-nav ul li a {
+    color: #ffffff !important;
+    border-top: 1px solid rgba(86, 85, 85, 0.5);
+  }
+}/*# sourceMappingURL=dark.css.map */
