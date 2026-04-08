@@ -32,7 +32,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-stripe.api_key = os.getenv("SECRET_KEY")
+stripe.api_key = os.getenv("STRIPE_API_KEY")
 
 # ── App Setup ────────────────────────────────────────────────────────────────
 
