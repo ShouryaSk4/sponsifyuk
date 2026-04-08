@@ -45,7 +45,26 @@ CORS(app, supports_credentials=True,
          "http://localhost:5500", "http://localhost:8080", "http://localhost:5173", "null"
      ])
 
-DB_PATH = "jobs.db"
+# ── DB Setup (FIXED ABSOLUTE PATH) ───────────────────────────────────────────
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DB_PATH = os.path.join(BASE_DIR, "jobs.db")
+
+
+def get_db():
+    if "db" not in g:
+        print("USING DB:", DB_PATH)  # keep for debugging (remove later)
+        g.db = sqlite3.connect(DB_PATH)
+        g.db.row_factory = sqlite3.Row
+    return g.db
+
+
+@app.teardown_appcontext
+def close_db(exception):
+    db = g.pop("db", None)
+    if db is not None:
+        db.close()
+      
 search_engine = JobSearchEngine(db_path=DB_PATH)
 
 # ── Job Category Mapping ──────────────────────────────────────────────────────
