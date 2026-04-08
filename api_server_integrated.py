@@ -1116,5 +1116,6 @@ if __name__ == "__main__":
     print("  SponsifyUK API Server")
     print("  http://localhost:8000")
     print("=" * 60 + "\n")
-    app.run(debug=True, host="0.0.0.0", port=8000)
+    port = int(os.environ.get("PORT", 8000))
+    app.run(host="0.0.0.0", port=port)
     
