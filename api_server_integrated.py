@@ -1044,7 +1044,10 @@ def get_job_detail(job_id):
 
     return jsonify({"success": True, "job": job_data})
 
-
+@app.route("/")
+def root():
+    return "WORKING"
+  
 @app.route("/api/filters", methods=["GET"])
 def get_filters():
     """Returns available filter option lists for dropdowns."""
