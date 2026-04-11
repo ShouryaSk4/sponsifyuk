@@ -40,6 +40,7 @@ app = Flask(__name__)
 app.secret_key = secrets.token_hex(32)
 CORS(app, supports_credentials=True,
      origins=[
+         "https://api.aztechinfoway.com"
          "https://sponsifyuk.aztechinfoway.com",
          "http://localhost", "http://127.0.0.1",
          "http://localhost:5500", "http://localhost:8080", "http://localhost:5173", "null"
